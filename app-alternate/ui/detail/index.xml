@@ -1,0 +1,21 @@
+<Alloy>
+	<Window class="container" title="{currentMovie.title}">
+		<ActionBar platform="android" displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
+		<ScrollView >
+			<View id="header">
+				<ImageView id="poster" image="{currentMovie.thumbnail}"	/>
+				<View id="info" >
+					<Label class="title" text="{currentMovie.title}"></Label>
+					<Label id="year" text="{currentMovie.year}"></Label>
+					<Label id="rating">R</Label>
+					<Label id="cscore" class="score" text="{currentMovie.score}%"/>
+				</View>
+			</View>
+			<Label id="plot" text="{currentMovie.synopsis}"/>
+			<Label class="title">Actors</Label>
+			<View id="cast" dataCollection="cast" layout="vertical">
+				<Label text="{name}"></Label>
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

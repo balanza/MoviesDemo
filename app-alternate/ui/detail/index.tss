@@ -1,0 +1,68 @@
+
+".container" : {
+ 	backgroundColor: "white",
+}
+"ScrollView": {
+	contentWidth: Ti.UI.FILL,
+	contentHeight: Ti.UI.SIZE,
+	scrollType: "vertical",
+ 	layout: "vertical"
+}
+"Label[platform=android]": {
+	color: "black"
+}
+"#header": {
+	height: "40%",
+	layout: "horizontal"
+}
+"#poster": {
+	width: "40%",
+	left: 5,
+	top: 5,
+	image: "/appicon.png"
+}
+"#poster[platform=android]": {
+	left: 0
+}
+"#info": {
+	layout: "vertical"
+	
+}
+"#info[platform=android]": {
+	width: "60%"
+}
+"Label": {
+	left: 5,
+	font: {
+		fontSize: 13
+	}
+}
+".title": {
+	top: 5,
+	font: {
+		fontSize: 14,
+		fontWeight: "bold"
+	}
+}
+"#rating": {
+	borderWidth: 1,
+	borderColor: "black",
+	width: 15,
+	textAlign: "center",
+	font: {
+		fontWeight: "bold"
+	}
+}
+"#plot": {
+	top: 10,
+	width: "95%"
+}
+"#cast": {
+	height: Ti.UI.SIZE
+}
+".score": {
+	font: {
+		fontSize: 24,
+		fontWeight: "bold"
+	}
+}

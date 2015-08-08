@@ -1,0 +1,6 @@
+<Alloy>
+    <Window class="container" title="Movies">
+        <Require src="list"></Require>
+        <Widget src="nl.fokkezb.loading" name="view" id="loading" />
+    </Window>
+</Alloy>

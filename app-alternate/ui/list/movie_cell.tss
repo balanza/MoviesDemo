@@ -1,0 +1,45 @@
+
+".container" : {
+  height: 90
+}
+"Label[platform=android]": {
+	color: "black"
+}
+"#thumb": {
+	left: 5,
+	width: 60,
+	height: 80
+}
+".detail": {
+	layout: "vertical"
+}
+"#title": {
+	top: 25,
+	left: 80,
+	font: {
+		fontSize: 15,
+		fontWeight: "bold"
+	}
+}
+"#subtitle": {
+	layout: "horizontal",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: 80,
+	top: 5,
+	font: {
+		fontSize: 5
+	}
+}
+"#year": {
+	font: {
+		fontSize: 13
+	}
+	
+}
+"#score": {
+	left: 5,
+	font: {
+		fontSize: 13
+	}
+}

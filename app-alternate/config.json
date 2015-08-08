@@ -1,0 +1,15 @@
+{
+  "global": {
+    "apikey": "94ea9e06661e6c4bb722f87b223565f3"
+  },
+  "env:development": {},
+  "env:test": {},
+  "env:production": {},
+  "os:android": {},
+  "os:blackberry": {},
+  "os:ios": {},
+  "os:mobileweb": {},
+  "dependencies": {
+    "nl.fokkezb.loading": "*"
+  }
+}
