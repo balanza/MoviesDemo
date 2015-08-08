@@ -1,6 +1,6 @@
 {
   "global": {
-    "apikey": "<put_here_your_rottentomatoes_api_key>"
+    "apikey": "94ea9e06661e6c4bb722f87b223565f3"
   },
   "env:development": {},
   "env:test": {},

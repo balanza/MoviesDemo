@@ -3,10 +3,9 @@ var args = arguments[0];
 
 var movieDetail = Alloy.Collections.movieList.at(args).toJSON();
 
-movieDetail.ascore = movieDetail.ratings.audience_score;
 
 $.cscore.color = Alloy.Globals.setColor(movieDetail.score); 
-$.ascore.color = Alloy.Globals.setColor(movieDetail.ascore);
+
 
 
 movieDetail.thumbnail.replace("_pro", "_det");

@@ -1,6 +1,6 @@
 
 
-var score = $model.get("ratings").critics_score;
+var score = $model.get("score");
 $.score.color = Alloy.Globals.setColor(score);
 $.score.text += "%";
 

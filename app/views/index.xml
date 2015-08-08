@@ -1,10 +1,6 @@
 <Alloy>
     <Window class="container" title="Movies">
-        <TableView id="list" dataCollection="movieList" dataTransform="transformModel" onClick="showDetail">
-        	<SearchBar platform="ios"/>
-        	<SearchView id="searchView" ns="Ti.UI.Android" platform="android" backgroundColor="black" />
-            <Require src="movie_cell"></Require>
-        </TableView>
+        <Require src="list"></Require>
         <Widget src="nl.fokkezb.loading" name="view" id="loading" />
     </Window>
 </Alloy>
