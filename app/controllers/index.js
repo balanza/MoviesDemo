@@ -1,10 +1,10 @@
 
 
 if (OS_IOS) {
-    var navWin = Ti.UI.iOS.createNavigationWindow({
+     Alloy.Globals.navWin = Ti.UI.iOS.createNavigationWindow({
         window: $.index
     });
-    navWin.open();
+     Alloy.Globals.navWin.open();
     
 } else {
     $.index.open();

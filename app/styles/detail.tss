@@ -47,7 +47,7 @@
 "#rating": {
 	borderWidth: 1,
 	borderColor: "black",
-	width: 15,
+	width: Ti.UI.SIZE,
 	textAlign: "center",
 	font: {
 		fontWeight: "bold"

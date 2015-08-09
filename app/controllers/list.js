@@ -8,13 +8,17 @@ if (OS_IOS) {
 }
 
 
+_.defer(function(){
 
-var net = require('net');
-Alloy.Globals.loading.show();
-net.getMovies(function(movies) {
-    Alloy.Globals.loading.hide();
-    Alloy.Collections.movieList.reset(movies);
+    var net = require('net');
+    Alloy.Globals.loading.show();
+    net.getMovies(function(movies) {
+        Alloy.Globals.loading.hide();
+        Alloy.Collections.movieList.reset(movies);
+    });
 });
+
+
 
 
 
@@ -22,7 +26,7 @@ net.getMovies(function(movies) {
 function showDetail(e) {
     var detailWin = Alloy.createController("detail", e.index).getView();
     if (OS_IOS) {
-        navWin.openWindow(detailWin);
+         Alloy.Globals.navWin.openWindow(detailWin);
     } else {
         detailWin.open();
     }

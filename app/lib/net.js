@@ -12,7 +12,8 @@ exports.getMovies = function(_callback) {
 				title: e.original_title,
 				score: e.vote_average * 10,
 				year: e.release_date.split('-')[0],
-				thumbnail: "http://image.tmdb.org/t/p/w500" + e.poster_path
+				thumbnail: "http://image.tmdb.org/t/p/w500" + e.poster_path,
+				synopsis: e.overview
 			};
 		}));
 	};
